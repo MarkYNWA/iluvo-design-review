@@ -85,3 +85,6 @@ body.haven-polished #site .c-header{padding-left:7%;padding-right:7%}
 @keyframes team-people-settle{from{transform:scale(1.035)}to{transform:scale(1)}}
 @media(max-width:700px){.team-people{min-height:0;aspect-ratio:1122/1402}}
 @media(prefers-reduced-motion:reduce){.team-in-view .team-people img{animation:none}}
+
+/* Anchor the solar photograph to the panels, not the sky. */
+.haven-polished #site .group-energy>img{object-position:50% 100%}
