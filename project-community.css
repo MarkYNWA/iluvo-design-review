@@ -78,8 +78,8 @@ body.haven-polished #site .c-header{padding-left:7%;padding-right:7%}
 @media(max-width:700px){.team-engineering{padding:32px 24px 26px}.team-engineering svg{margin-top:0}.haven-polished #site #our-team .team-engineering-heading p{font-size:40px}}
 @media(prefers-reduced-motion:reduce){.team-in-view .team-energy-path path{animation:none}}
 
-.team-people{position:relative;min-height:560px;align-self:stretch;background:var(--ink);overflow:hidden}
-.team-people img{display:block;width:100%;height:124.071%;max-width:none;position:absolute;top:0;left:0;object-fit:cover;object-position:center top}
+.team-people{position:relative;min-height:0;aspect-ratio:1122/1130;align-self:start;background:var(--ink);overflow:hidden}
+.haven-polished #site #our-team .team-people img{display:block;width:100%;height:auto;max-width:none;position:absolute;inset:0 auto auto 0;object-fit:initial;transform:none}
 .team-people>span{display:none}
 .team-in-view .team-people img{animation:team-people-settle 3s ease-out both}
 @keyframes team-people-settle{from{opacity:0}to{opacity:1}}
@@ -88,3 +88,14 @@ body.haven-polished #site .c-header{padding-left:7%;padding-right:7%}
 
 /* Anchor the solar photograph to the panels, not the sky. */
 .haven-polished #site .group-energy>img{object-position:50% 100%}
+
+/* Let the full-width artwork set the composition; never zoom into faces. */
+.haven-polished #site #our-team:has(.team-people){grid-template-columns:55fr 45fr;align-items:stretch}
+.haven-polished #site #our-team:has(.team-people) .founder-story{padding:32px;align-self:center}
+.haven-polished #site #our-team:has(.team-people) .founder-story p{font-size:18px;line-height:1.5}
+.haven-polished #site #our-team:has(.team-people) .founder-story h2{font-size:46px!important;margin-bottom:20px}
+.haven-polished #site #our-team:has(.team-people) .team-section-label{margin-bottom:16px}
+@media(max-width:1250px){
+.haven-polished #site #our-team:has(.team-people){grid-template-columns:1fr}
+.haven-polished #site #our-team:has(.team-people) .founder-story{padding:32px clamp(24px,5vw,64px)}
+}
