@@ -63,3 +63,17 @@ body.haven-polished #site .c-header{padding-left:7%;padding-right:7%}
 /* Show the complete owner-supplied landscape, with matching service image proportions. */
 .haven-service-pair .pair-photo{aspect-ratio:1384/786;height:auto;overflow:hidden}
 .haven-service-pair article:first-child .pair-photo img{width:100%;height:auto;max-width:none;object-fit:contain;transform:none;display:block}
+
+/* Bespoke architectural team illustration, not a photograph of staff. */
+.team-engineering{background:var(--ink);color:var(--paper,#f7f6ef);padding:42px 9% 30px;display:flex;flex-direction:column;justify-content:center;overflow:hidden}
+.team-engineering-heading>span{font:400 17px/1.4 'Space Grotesk',sans-serif;opacity:.8}
+.haven-polished #site #our-team .team-engineering-heading p{font:500 clamp(42px,4.5vw,66px)/1.02 'Barlow Condensed',sans-serif;letter-spacing:-.01em;margin:16px 0 24px;color:inherit}
+.team-engineering svg{width:120%;max-width:none;height:auto;margin:0 -10% 26px;overflow:visible}
+.team-disciplines{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;border-top:1px solid #ffffff40;padding-top:19px;font:500 clamp(16px,1.5vw,21px)/1.2 'Space Grotesk',sans-serif}
+.team-disciplines span:nth-child(2){text-align:center}.team-disciplines span:last-child{text-align:right}
+.haven-polished #site #our-team .team-engineering-caption{font:400 15px/1.5 'Space Grotesk',sans-serif;color:inherit;opacity:.7;margin:18px 0 0}
+.team-in-view .team-energy-path path{animation:team-route-draw 2.6s ease both}
+.team-in-view .team-energy-path path:nth-child(2){animation-delay:.35s}.team-in-view .team-energy-path path:nth-child(3){animation-delay:.7s}
+@keyframes team-route-draw{from{stroke-dasharray:100;stroke-dashoffset:100;opacity:.15}to{stroke-dasharray:100;stroke-dashoffset:0;opacity:1}}
+@media(max-width:700px){.team-engineering{padding:32px 24px 26px}.team-engineering svg{margin-top:0}.haven-polished #site #our-team .team-engineering-heading p{font-size:48px}}
+@media(prefers-reduced-motion:reduce){.team-in-view .team-energy-path path{animation:none}}
