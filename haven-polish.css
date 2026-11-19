@@ -1,0 +1,229 @@
+@font-face{font-family:Manrope;src:url('assets/manrope-variable.ttf') format('truetype');font-weight:200 800;font-display:swap}
+/* Haven's chosen direction: generous photography, lighter type, fewer containers. */
+.haven-polished{--paper:#f7f6ef;--ink:#223c34;--soft:#e8ecdf;--muted:#62736a;--rule:#d1d9cc}
+.haven-polished #site p,.haven-polished #site button,.haven-polished #site nav,.haven-polished #site footer,.haven-polished #site summary,.haven-polished #site li,.haven-polished .haven-band{font-family:Manrope,Arial,sans-serif}
+.haven-polished #site .c-eyebrow{font:500 10px/1.7 Manrope,Arial,sans-serif;letter-spacing:1.7px}
+.haven-polished #site h2{font-family:Outfit,Arial,sans-serif;font-size:clamp(38px,4.4vw,64px);font-weight:400;letter-spacing:-1.8px;line-height:1.08}
+.haven-polished #site h2 span{color:var(--muted)}
+.haven-polished .haven-copy h1{font-weight:400;letter-spacing:-3px;line-height:1.03}
+.haven-polished .haven-copy>p:not(.c-eyebrow){font-size:16px;line-height:1.8;font-weight:400;max-width:620px}
+.haven-polished .haven-band{padding:23px 7%;font-size:11px;background:var(--soft);color:var(--ink);letter-spacing:.2px}
+.haven-polished .c-button{border-radius:0;font-weight:500;font-size:13px;padding:18px 22px}
+.haven-polished .c-intro{padding:110px 7% 105px;display:grid;grid-template-columns:1fr 3fr;gap:6%;border:0}
+.haven-polished .c-intro>.c-eyebrow{padding-top:12px}
+.haven-polished .haven-intro-statement h2{margin:0 0 45px}
+.haven-polished .haven-intro-statement>div{display:grid;grid-template-columns:1fr 1fr;gap:40px;max-width:790px}
+.haven-polished .haven-intro-statement p{font-size:14px;line-height:1.9;color:var(--muted);margin:0}
+.haven-polished .c-services{padding:30px 7% 110px}
+.haven-polished .c-section-top{grid-template-columns:1fr 2fr 1fr;gap:5%;margin-bottom:55px;align-items:start}
+.haven-polished .c-section-top h2{font-size:clamp(35px,3.8vw,54px);margin:0}
+.haven-polished .c-section-top>p:last-child{font-size:12px;line-height:1.9;align-self:end}
+.haven-polished .c-service-layout{display:block}
+.haven-solar-feature{display:grid;grid-template-columns:1.5fr 1fr;gap:7%;align-items:center}
+.haven-service-photo{position:relative;overflow:hidden;background:var(--soft)}
+.haven-service-photo img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .7s ease}
+.haven-service-photo:hover img{transform:scale(1.025)}
+.haven-solar-feature .haven-service-photo{height:490px}
+.haven-service-photo>span{position:absolute;bottom:20px;left:22px;font:10px Manrope,Arial,sans-serif;letter-spacing:1.1px;color:white;text-shadow:0 1px 8px #000;background:#163a2d99;padding:9px 12px}
+.haven-polished .haven-service-text h3{font:400 clamp(28px,3vw,42px)/1.12 Outfit,Arial,sans-serif;letter-spacing:-1px;margin:20px 0 25px}
+.haven-polished .haven-service-text p:not(.c-eyebrow){font-size:14px;line-height:1.85;color:var(--muted);max-width:370px}
+.haven-service-text button{background:none;border:0;border-bottom:1px solid var(--rule);padding:18px 0 14px;display:flex;justify-content:space-between;width:100%;max-width:320px;color:var(--ink);font-size:12px!important;cursor:pointer;margin-top:15px}
+.haven-service-text button span{font-size:19px}
+.haven-secondary-services{display:grid;grid-template-columns:1fr 1fr;gap:8%;margin-top:80px}
+.haven-secondary-services article:nth-child(2){padding-top:85px}
+.haven-secondary-services .haven-service-photo{height:340px}
+.haven-secondary-services .haven-service-text{padding:28px 0 0}
+.haven-polished .c-credit{margin-top:45px;font-size:9px!important;opacity:.75}
+.haven-journey{padding:90px 7% 35px;background:var(--ink);color:var(--paper)}
+.haven-journey-heading{display:grid;grid-template-columns:1fr 2fr 1fr;gap:5%;margin-bottom:60px;align-items:start}
+.haven-polished .haven-journey-heading h2{margin:0;font-size:clamp(36px,4vw,57px);color:var(--paper)}
+.haven-polished .haven-journey-heading h2 span{color:color-mix(in srgb,var(--paper) 60%,var(--ink))}
+.haven-journey-heading>p:last-child{font-size:12px!important;line-height:1.85;color:color-mix(in srgb,var(--paper) 72%,var(--ink));align-self:end;margin-bottom:0}
+.haven-journey-stage{display:grid;grid-template-columns:1.05fr 1fr;gap:8%;align-items:stretch}
+.haven-journey-image{position:relative;min-height:590px;overflow:hidden}
+.haven-journey-image img{display:block;position:absolute;width:100%;height:100%;object-fit:cover}
+.haven-journey-image:after{content:'';position:absolute;inset:60% 0 0;background:linear-gradient(transparent,#0b241b99)}
+.haven-journey-image>span{position:absolute;bottom:25px;left:26px;z-index:1;font:10px Manrope,Arial,sans-serif;letter-spacing:2px;color:white}
+.haven-journey-content{display:flex;flex-direction:column;min-width:0;padding-top:4px}
+.haven-chapters{display:flex;justify-content:space-between;border-bottom:1px solid #ffffff30;gap:12px}
+.haven-chapters button{background:none;border:0;border-bottom:2px solid transparent;color:inherit;opacity:.5;padding:0 0 18px;font-size:10px!important;letter-spacing:1px;cursor:pointer}
+.haven-chapters button span{display:block;text-align:left;font-size:10px;margin-bottom:9px}
+.haven-chapters button[aria-selected=true]{opacity:1;border-bottom-color:var(--accent,#d8e4a5)}
+.haven-chapter{position:relative;padding-top:50px;flex:1}
+.haven-chapter[hidden]{display:none}
+.haven-polished .haven-chapter h3{font:400 clamp(30px,3.5vw,49px)/1.08 Outfit,Arial,sans-serif;letter-spacing:-1.1px;margin:0 0 24px;max-width:420px;position:relative}
+.chapter-index{position:absolute;right:0;top:10px;font:400 130px/1 Outfit,Arial,sans-serif;letter-spacing:-7px;opacity:.055;pointer-events:none}
+.haven-polished .haven-chapter p{font-size:13px;line-height:1.85;color:color-mix(in srgb,var(--paper) 68%,var(--ink));max-width:420px}
+.haven-polished .haven-chapter p.chapter-lead{font-size:16px;color:var(--paper);line-height:1.7;margin-bottom:20px}
+.chapter-detail{margin-top:25px;border-top:1px solid #ffffff26}
+.chapter-detail summary{font-size:11px;display:flex;justify-content:space-between;cursor:pointer;padding:16px 0;list-style:none}
+.chapter-detail summary::-webkit-details-marker{display:none}
+.chapter-detail[open] summary>span{transform:rotate(45deg)}
+.chapter-detail ol{list-style:none;margin:0 0 15px;padding:0}
+.chapter-detail li{display:flex;gap:18px;margin:15px 0}
+.chapter-detail li>span{font-size:9px;opacity:.5;padding-top:5px}
+.chapter-detail h4{font:500 12px Manrope,Arial,sans-serif;margin:0}
+.haven-polished .chapter-detail li p{font-size:11px;margin:4px 0 0}
+.journey-controls{display:flex;justify-content:space-between;align-items:center;margin-top:30px;font:10px Manrope,Arial,sans-serif;letter-spacing:2px}
+.journey-controls>div{display:flex;gap:9px}.journey-controls button{width:42px;height:42px;border:1px solid #ffffff60;border-radius:50%;color:inherit;background:none;font-size:18px;cursor:pointer}.journey-controls button:disabled{opacity:.25;cursor:default}
+.journey-note{display:flex;justify-content:space-between;gap:25px;border-top:1px solid #ffffff26;margin-top:60px;padding-top:25px;font-size:9px;letter-spacing:1px}
+.haven-polished .journey-note p{font-size:11px;margin:0;max-width:450px;line-height:1.7;letter-spacing:0;opacity:.7}
+.haven-polished .c-pro{margin:110px 7%;grid-template-columns:.85fr 1fr;gap:13%}
+.haven-polished .c-pro-photo{border-radius:0;height:530px}
+.haven-polished .c-pro>div>p:not(.c-eyebrow){font-size:14px;line-height:1.9;max-width:420px}
+.haven-polished .c-pro li{font-size:12px;padding:14px 0}
+.haven-polished .c-details{padding:30px 7% 100px;gap:14%}
+.haven-polished .c-founder h2{font-size:42px!important}
+.haven-polished .c-founder p:not(.c-eyebrow){font-size:14px;line-height:1.9}
+.haven-polished .c-founder p:last-child{font-size:12px}
+.haven-polished .c-faq summary{font-size:13px;padding:3px 0;line-height:1.6}
+.haven-polished .c-faq details p{font-size:12px;line-height:1.8}
+.haven-polished .owner-brand-family{padding:80px 7%;border-top:1px solid var(--rule)}
+.haven-polished .owner-family-intro h2{font-size:48px!important}
+.haven-polished .owner-family-intro p{font-size:14px;line-height:1.9}
+.haven-polished .owner-family-grid h3{font-size:23px}
+.haven-polished .owner-family-grid p{font-size:12px;line-height:1.85}
+.haven-polished .owner-family-grid article>span{font-size:9px}.haven-polished .owner-family-grid small{font-size:10px}
+.haven-polished .c-close{border-radius:0;margin:0;padding:90px 7%;background:var(--soft);color:var(--ink)}
+.haven-polished .c-close h2{font-size:clamp(43px,5vw,70px)!important;margin:22px 0 35px}
+.haven-polished .c-close .c-button{background:var(--ink);color:var(--paper)}
+.haven-polished .c-footer{padding:35px 7%}.haven-polished .c-footer p{font-size:9px}
+@media(max-width:1000px){.haven-polished .c-intro{grid-template-columns:1fr 2.5fr}.haven-polished .c-section-top,.haven-journey-heading{grid-template-columns:1fr 2fr}.haven-polished .c-section-top>p:last-child,.haven-journey-heading>p:last-child{grid-column:2}.haven-journey-stage{gap:6%}.haven-chapters button{font-size:8px!important;letter-spacing:.5px}.haven-polished .haven-service-text h3{font-size:32px}.haven-solar-feature .haven-service-photo{height:420px}.haven-secondary-services .haven-service-photo{height:290px}}
+@media(max-width:700px){.haven-polished .haven-copy h1{font-size:56px;letter-spacing:-2px}.haven-polished .haven-copy>p:not(.c-eyebrow){font-size:14px}.haven-polished .haven-band{padding:20px 6%;font-size:10px;line-height:2}.haven-polished .c-intro{display:block;padding:65px 6%}.haven-polished .haven-intro-statement h2{font-size:37px;margin:25px 0}.haven-polished .haven-intro-statement>div{display:block}.haven-polished .haven-intro-statement p{font-size:13px;margin-top:18px}.haven-polished .c-services{padding:0 6% 60px}.haven-polished .c-section-top,.haven-journey-heading{display:block;margin-bottom:30px}.haven-polished .c-section-top h2{font-size:36px;margin:20px 0}.haven-polished .c-section-top>p:last-child{font-size:12px}.haven-solar-feature{display:block}.haven-solar-feature .haven-service-photo{height:300px}.haven-service-text{padding-top:25px}.haven-polished .haven-service-text h3{font-size:33px;margin:16px 0}.haven-polished .haven-service-text p:not(.c-eyebrow){font-size:13px}.haven-secondary-services{display:block;margin-top:45px}.haven-secondary-services article:nth-child(2){padding-top:45px}.haven-secondary-services .haven-service-photo{height:270px}.haven-polished .c-credit{font-size:8px!important;margin-top:30px}.haven-journey{padding:55px 6% 25px}.haven-polished .haven-journey-heading h2{font-size:38px;margin:20px 0}.haven-journey-heading>p:last-child{font-size:12px!important;max-width:320px}.haven-journey-stage{display:flex;flex-direction:column;gap:25px}.haven-journey-image{min-height:255px;height:255px}.haven-journey-image img{object-position:center 55%}.haven-journey-image>span{font-size:8px;left:18px;bottom:18px}.haven-chapters button{font-size:10px!important;padding-bottom:14px}.haven-chapters button span{font-size:9px;margin-bottom:7px}.haven-chapter{padding-top:32px}.haven-polished .haven-chapter h3{font-size:35px;max-width:300px}.haven-polished .haven-chapter p.chapter-lead{font-size:15px}.haven-polished .haven-chapter p{font-size:12px}.chapter-index{font-size:105px}.journey-controls{margin-top:20px}.journey-note{display:block;margin-top:35px;padding-top:20px}.haven-polished .journey-note p{margin-top:12px;font-size:10px}.haven-polished .c-pro{display:block;margin:65px 6%}.haven-polished .c-pro-photo{height:340px}.haven-polished .c-pro h2{font-size:38px}.haven-polished .c-pro>div>p:not(.c-eyebrow){font-size:13px}.haven-polished .c-details{padding:0 6% 65px}.haven-polished .c-founder h2{font-size:36px!important}.haven-polished .c-founder p:not(.c-eyebrow){font-size:13px}.haven-polished .owner-brand-family{padding:50px 6%}.haven-polished .owner-family-intro h2{font-size:38px!important}.haven-polished .owner-family-intro p{font-size:13px}.haven-polished .c-close{margin:0;padding:60px 6%}.haven-polished .c-close h2{font-size:40px!important}.haven-polished .c-footer{padding:30px 6%}.haven-polished .main-nav{top:66px}}
+@media(prefers-reduced-motion:reduce){.haven-service-photo img{transition:none}}
+.haven-polished #site .haven-journey-heading h2 span{color:color-mix(in srgb,var(--paper) 68%,var(--ink))}
+.haven-chapters button{opacity:.7}.haven-chapters button[aria-selected=true]{opacity:1}
+/* Clearer hierarchy and stronger compositions outside the approved journey. */
+.haven-polished #site .c-intro{display:flex;align-items:flex-end;justify-content:space-between;gap:7%;padding:75px 7%;background:var(--paper)}
+.haven-polished #site .c-intro h2{font-size:clamp(40px,4.7vw,70px);line-height:1.04;font-weight:500;letter-spacing:-2px;margin:0;flex:1.4}
+.haven-polished #site .c-intro h2 span{color:var(--ink)}
+.haven-polished #site .c-intro>p{flex:.8;font:400 19px/1.65 Manrope,Arial,sans-serif;color:var(--ink);max-width:420px;margin:0 0 4px}
+.haven-polished .c-services{padding:0 7% 70px}
+.haven-solar-statement{position:relative;min-height:570px;background:#19372c;color:#fff;isolation:isolate;display:flex;align-items:flex-end;overflow:hidden}
+.haven-solar-statement>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.haven-solar-statement:after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,#09241cf5,#102d2299 52%,#102d2210);z-index:-1}
+.solar-statement-content{display:grid;grid-template-columns:1.2fr 1fr;gap:9%;padding:50px;width:100%;align-items:end}
+.haven-polished #site .haven-solar-statement h3{font:500 clamp(42px,5.2vw,76px)/1 Outfit,Arial,sans-serif;letter-spacing:-2px;margin:0 0 24px;color:white}
+.haven-polished #site .haven-solar-statement p{font:400 20px/1.65 Manrope,Arial,sans-serif;color:#fff;margin:0}
+.haven-polished #site .haven-solar-statement .solar-service-name{font:500 18px/1.4 Manrope,Arial,sans-serif;color:#dce6cf}
+.haven-solar-statement button,.pair-copy button{display:flex;align-items:center;justify-content:space-between;gap:18px;background:none;border:0;border-bottom:1px solid currentColor;padding:18px 0 12px;margin-top:26px;color:inherit;width:100%;font:500 16px Manrope,Arial,sans-serif!important;cursor:pointer;text-align:left}
+.haven-solar-statement button span,.pair-copy button span{font-size:25px}
+.haven-service-pair{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:28px}
+.haven-service-pair article{display:flex;flex-direction:column;background:var(--soft);color:var(--ink)}
+.haven-service-pair article:nth-child(2){background:color-mix(in srgb,var(--soft) 60%,#d9d2b5)}
+.pair-photo{height:310px;overflow:hidden}.pair-photo img{display:block;width:100%;height:100%;object-fit:cover}
+.pair-copy{padding:35px 38px;display:flex;flex-direction:column;flex:1}
+.haven-polished #site .pair-copy h3{font:500 clamp(30px,3vw,44px)/1.1 Outfit,Arial,sans-serif;letter-spacing:-1.1px;margin:0 0 24px}
+.haven-polished #site .pair-copy p{font:400 18px/1.7 Manrope,Arial,sans-serif;color:var(--ink);margin:0 0 20px;max-width:480px}
+.pair-copy button{margin-top:auto}
+.haven-polished .c-credit{font-size:11px!important;line-height:1.65;opacity:1;margin-top:22px}
+.haven-polished #site .c-pro{margin:75px 7%;gap:7%;grid-template-columns:1fr 1fr;align-items:center}
+.haven-polished #site .c-pro h2{font-size:clamp(36px,4vw,57px);font-weight:500;margin-top:0}
+.haven-polished #site .c-pro h2 span{color:var(--ink)}
+.haven-polished #site .c-pro>div>p{font-size:19px;line-height:1.7;max-width:540px;color:var(--ink)}
+.haven-polished #site .c-pro li{font-size:16px;line-height:1.65;padding:16px 0}
+.haven-polished #site .c-pro .c-button,.haven-polished #site .c-close .c-button{font-size:16px;padding:20px 24px}
+.haven-polished #site .c-details{display:block;padding:0 7% 75px}
+.haven-polished #site .c-founder{display:grid;grid-template-columns:.65fr 1.35fr;gap:8%;background:var(--soft);padding:55px}
+.founder-signature{display:flex;flex-direction:column;justify-content:space-between;gap:35px;font:500 25px/1.3 Outfit,Arial,sans-serif}
+.founder-symbol{font:400 110px/.9 Outfit,Arial,sans-serif;letter-spacing:-9px;color:color-mix(in srgb,var(--ink) 50%,var(--soft))}
+.founder-signature small{font:400 16px Manrope,Arial,sans-serif;display:block;margin-top:10px}
+.haven-polished #site .founder-story h2{font-size:clamp(36px,3.9vw,55px)!important;font-weight:500;margin:0 0 30px;letter-spacing:-1.5px}
+.haven-polished #site .founder-story h2 span{color:var(--ink)}
+.haven-polished #site .c-founder .founder-story p{font:400 20px/1.7 Manrope,Arial,sans-serif;color:var(--ink);margin:0 0 24px}
+.haven-polished #site .c-founder .founder-story p.founder-qualification{font-size:17px;margin:0}
+.haven-polished #site .c-faq{display:grid;grid-template-columns:.65fr 1.35fr;column-gap:8%;margin-top:70px;padding:0}
+.haven-polished #site .c-faq h2{grid-column:1;grid-row:1/4;font-size:clamp(35px,3.6vw,52px);font-weight:500;margin:18px 0 0}
+.haven-polished #site .c-faq details{grid-column:2;padding:22px 0;border-bottom:1px solid var(--rule)}
+.haven-polished #site .c-faq summary{font:500 23px/1.4 Outfit,Arial,sans-serif;letter-spacing:-.3px;padding:0}
+.haven-polished #site .c-faq details p{font:400 17px/1.8 Manrope,Arial,sans-serif;color:var(--ink);padding-top:20px}
+.haven-polished #site .owner-brand-family{padding:65px 7%}
+.haven-polished #site .owner-family-intro h2{font-size:clamp(42px,4.5vw,64px)!important;font-weight:500}
+.haven-polished #site .owner-family-intro p{font-size:20px;color:var(--ink);line-height:1.7}
+.haven-polished #site .owner-family-grid{gap:20px 6%}
+.haven-polished #site .owner-family-grid h3{font-size:32px;margin:16px 0 20px}
+.haven-polished #site .owner-family-grid p{font-size:17px;line-height:1.75;opacity:1}
+.haven-polished #site .owner-family-grid article>span{font:500 15px/1.5 Manrope,Arial,sans-serif;letter-spacing:0}
+.haven-polished #site .owner-family-grid small{font-size:14px;opacity:1;line-height:1.6}
+.haven-polished #site .owner-family-grid button{font-size:16px}
+.haven-polished #site .c-close h2{font-weight:500}
+@media(max-width:1000px){.solar-statement-content{gap:6%;padding:35px}.haven-polished #site .haven-solar-statement p{font-size:18px}.pair-copy{padding:28px}.haven-polished #site .c-founder{padding:40px}.haven-polished #site .c-faq summary{font-size:21px}}
+@media(max-width:700px){.haven-polished #site .c-intro{display:block;padding:45px 6%}.haven-polished #site .c-intro h2{font-size:39px;letter-spacing:-1.3px;line-height:1.08}.haven-polished #site .c-intro>p{font-size:17px;line-height:1.7;margin:25px 0 0}.haven-polished .c-services{padding:0 6% 45px}.haven-solar-statement{min-height:550px}.solar-statement-content{display:block;padding:28px 24px}.haven-polished #site .haven-solar-statement h3{font-size:45px;letter-spacing:-1.5px;margin-bottom:18px}.haven-polished #site .haven-solar-statement .solar-service-name{font-size:16px;margin-bottom:27px}.haven-polished #site .haven-solar-statement p{font-size:17px}.haven-service-pair{grid-template-columns:1fr;gap:24px;margin-top:24px}.pair-photo{height:260px}.pair-copy{padding:26px 24px}.haven-polished #site .pair-copy h3{font-size:32px;margin-bottom:20px}.haven-polished #site .pair-copy p{font-size:17px}.haven-polished .c-credit{font-size:10px!important}.haven-polished #site .c-pro{display:block;margin:50px 6%}.haven-polished #site .c-pro h2{font-size:37px}.haven-polished #site .c-pro>div>p{font-size:17px}.haven-polished #site .c-pro li{font-size:15px}.haven-polished #site .c-details{padding:0 6% 45px}.haven-polished #site .c-founder{display:block;padding:30px 24px}.founder-signature{flex-direction:row;align-items:center;gap:22px;font-size:22px;padding-bottom:30px;border-bottom:1px solid var(--rule);margin-bottom:30px}.founder-symbol{font-size:74px;letter-spacing:-6px}.founder-signature small{font-size:13px}.haven-polished #site .founder-story h2{font-size:34px!important;letter-spacing:-1px}.haven-polished #site .c-founder .founder-story p{font-size:18px}.haven-polished #site .c-founder .founder-story p.founder-qualification{font-size:16px}.haven-polished #site .c-faq{display:block;margin-top:45px}.haven-polished #site .c-faq h2{font-size:37px;margin:0 0 20px}.haven-polished #site .c-faq summary{font-size:22px}.haven-polished #site .c-faq details p{font-size:16px}.haven-polished #site .owner-brand-family{padding:45px 6%}.haven-polished #site .owner-family-intro p{font-size:18px}.haven-polished #site .owner-family-grid h3{font-size:29px}.haven-polished #site .owner-family-grid p{font-size:17px}.haven-polished #site .owner-family-grid article>span{font-size:14px}}
+
+/* Clear group services, distinct from future plans. */
+.haven-polished #site .haven-group{padding:76px 7%;background:var(--paper);color:var(--ink)}
+.haven-group .group-heading{display:grid;grid-template-columns:1.4fr 1fr;align-items:end;gap:8%;margin-bottom:38px}
+.haven-polished #site .group-heading h2{font:500 clamp(36px,4vw,62px)/1.04 Outfit,sans-serif;letter-spacing:-1.7px;margin:0}
+.haven-group .group-heading p{font:400 19px/1.65 Manrope,sans-serif;margin:0;max-width:440px}
+.haven-group .group-services{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.haven-group .group-services article{overflow:hidden;display:flex;flex-direction:column;background:var(--ink);color:var(--paper)}
+.haven-group .group-services article.group-efficiency{background:color-mix(in srgb,var(--accent) 25%,var(--paper));color:var(--ink)}
+.haven-group .group-services img{width:100%;height:230px;object-fit:cover;display:block}
+.haven-group .group-card-copy{padding:34px;display:flex;flex-direction:column;flex:1}
+.haven-polished #site .group-card-copy h3{font:400 24px/1.2 Outfit,sans-serif;margin:0 0 28px;letter-spacing:-.5px}
+.haven-group .group-card-copy h3 strong{font-weight:600}
+.haven-polished #site .group-card-copy .group-purpose{font:500 clamp(30px,3vw,44px)/1.08 Outfit,sans-serif;letter-spacing:-1px;margin:0 0 22px}
+.haven-group .group-card-copy p{font:400 18px/1.65 Manrope,sans-serif;margin:0 0 30px;max-width:470px}
+.haven-group .group-card-copy button{margin-top:auto;display:flex;justify-content:space-between;align-items:center;gap:15px;border:0;border-top:1px solid currentColor;padding:22px 0 0;color:inherit;background:none;text-align:left;font:500 18px/1.4 Outfit,sans-serif;cursor:pointer}
+.haven-group .group-card-copy button span{font-size:28px}
+.haven-group .group-future{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px;padding-top:35px;margin-top:35px;border-top:1px solid var(--ink)}
+.haven-polished #site .group-future h3{font:500 25px/1.2 Outfit,sans-serif;margin:0 0 8px}
+.haven-group .group-future p,.haven-group .group-future span{font:400 15px/1.6 Manrope,sans-serif;margin:0;display:block}
+.haven-group .group-future strong{font:500 23px/1.3 Outfit,sans-serif;display:block;margin-bottom:8px}
+@media(max-width:700px){.haven-polished #site .haven-group{padding:44px 6%}.haven-group .group-heading,.haven-group .group-services{grid-template-columns:1fr;gap:24px}.haven-group .group-heading p{font-size:17px}.haven-group .group-services img{height:190px}.haven-group .group-card-copy{padding:25px}.haven-group .group-card-copy p{font-size:17px}.haven-group .group-future{grid-template-columns:1fr 1fr;gap:24px}.haven-group .group-future>div:first-child{grid-column:1/-1}}
+
+/* Engineering-led hierarchy: shared columns, precise alignment, distinct type. */
+.haven-polished #site .haven-journey-heading,.haven-polished #site .haven-journey-stage,.haven-polished #site .group-heading,.haven-polished #site .group-services{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;text-align:left}
+.haven-polished #site .haven-journey-heading,.haven-polished #site .group-heading{align-items:start;margin-bottom:40px}
+.haven-polished #site .haven-journey-heading h2,.haven-polished #site .group-heading h2{font:500 clamp(48px,5.4vw,78px)/.98 'Barlow Condensed',sans-serif;letter-spacing:-.5px;margin:0;text-align:left}
+.haven-polished #site .haven-journey-heading>p:last-child,.haven-polished #site .group-heading>p{font:400 19px/1.6 'Space Grotesk',sans-serif!important;grid-column:auto;align-self:start;margin:0;max-width:520px;color:inherit}
+.haven-polished #site .haven-chapter h3{font:500 clamp(38px,3.8vw,56px)/1.05 'Barlow Condensed',sans-serif;letter-spacing:0;max-width:none;margin-bottom:24px}
+.haven-polished #site .haven-chapter p{font:400 18px/1.65 'Space Grotesk',sans-serif;color:var(--paper);opacity:1}
+.haven-polished #site .haven-chapter p.chapter-lead{font-size:23px;line-height:1.35}
+.haven-polished #site .haven-chapters button{font:500 14px/1.4 'Space Grotesk',sans-serif!important;letter-spacing:0;text-align:left}
+.haven-polished #site .haven-chapters{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.haven-polished #site .chapter-detail summary{font:400 16px/1.5 'Space Grotesk',sans-serif}
+.haven-polished #site .chapter-index{display:none}
+.haven-polished #site .haven-journey-image{min-height:540px}
+.haven-polished #site .journey-note{display:none}
+.haven-polished #site .haven-journey{padding-bottom:70px}
+.haven-polished #site .group-card-copy h3{font:500 26px/1.2 'Space Grotesk',sans-serif;letter-spacing:-.5px}
+.haven-polished #site .group-card-copy .group-purpose{font:500 clamp(36px,3.6vw,52px)/1.05 'Barlow Condensed',sans-serif;letter-spacing:0;min-height:2.1em}
+.haven-polished #site .group-card-copy p,.haven-polished #site .group-card-copy button{font-family:'Space Grotesk',sans-serif}
+@media(max-width:700px){.haven-polished #site .haven-journey-heading,.haven-polished #site .haven-journey-stage,.haven-polished #site .group-heading,.haven-polished #site .group-services{grid-template-columns:minmax(0,1fr);gap:24px}.haven-polished #site .haven-journey-heading h2,.haven-polished #site .group-heading h2{font-size:49px}.haven-polished #site .haven-journey-heading>p:last-child,.haven-polished #site .group-heading>p{font-size:17px!important;max-width:none}.haven-polished #site .haven-journey-image{min-height:280px}.haven-polished #site .haven-chapter p{font-size:17px}.haven-polished #site .haven-chapter p.chapter-lead{font-size:21px}.haven-polished #site .haven-chapters button{font-size:12px!important}.haven-polished #site .group-card-copy .group-purpose{min-height:0}}
+
+/* Balanced headings and a consistent, font-independent arrow system. */
+.haven-polished #site h1,.haven-polished #site h2,.haven-polished #site h3{text-wrap:balance}
+.haven-polished #site .ui-arrow{display:inline-block;width:22px;height:22px;min-width:22px;vertical-align:middle;flex-shrink:0}
+.haven-polished #site .arrow-diagonal{transform:rotate(-45deg)}
+.haven-polished #site .arrow-left{transform:rotate(180deg)}
+.haven-polished #site .arrow-down{transform:rotate(90deg)}
+.haven-polished #site .header-action .ui-arrow{width:15px;height:15px;min-width:15px}
+.haven-polished #site .haven-hero{align-items:center;padding-top:115px;padding-bottom:115px;height:auto;min-height:740px}
+.haven-polished #site .haven-copy h1{margin:24px 0 26px}
+.haven-polished #site .pair-copy h3{min-height:2.2em}
+@media(max-width:700px){
+.haven-polished #site .haven-hero{align-items:flex-start;min-height:0;height:auto;padding:126px 6% 106px}
+.haven-polished #site .haven-copy{width:100%;max-width:none}
+.haven-polished #site .haven-copy h1{font-size:clamp(39px,10.8vw,52px);letter-spacing:-1.6px;line-height:1.06;margin:22px 0 24px}
+.haven-polished #site .haven-copy>p:not(.c-eyebrow){font-size:16px;line-height:1.6}
+.haven-polished #site .haven-copy .c-button{margin-top:15px;display:flex;justify-content:space-between;width:100%;gap:14px;font-size:14px}
+.haven-polished #site .c-intro h2{font-size:clamp(32px,8.5vw,39px);line-height:1.12}
+.haven-polished #site .pair-copy h3{font-size:clamp(27px,7.3vw,33px);line-height:1.13;min-height:0}
+.haven-polished #site .c-pro h2,.haven-polished #site .founder-story h2{font-size:clamp(29px,7.8vw,36px)!important;letter-spacing:-1px;line-height:1.12}
+.haven-polished #site .group-heading h2{font-size:clamp(37px,10vw,47px);line-height:1.06}
+.haven-polished #site .haven-bottom{font-size:8px;letter-spacing:.5px;align-items:center}
+}
+
+/* Compact, text-led actions; no decorative arrow glyphs. */
+.haven-polished #site .arrow-diagonal,.haven-polished #site .haven-bottom .ui-arrow{display:none}
+.haven-polished #site .c-pro li:before{content:none;display:none}
+.haven-polished #site .c-button,.haven-polished #site .haven-copy .c-button,.haven-polished #site .c-pro .c-button,.haven-polished #site .c-close .c-button{display:inline-flex;width:auto;max-width:100%;min-height:46px;padding:12px 20px;font:500 14px/1.4 Manrope,sans-serif;letter-spacing:0;border-radius:3px;gap:0;justify-content:center;box-shadow:none;transition:background .2s,color .2s,transform .2s}
+.haven-polished #site .c-button:hover{transform:translateY(-1px)}
+.haven-polished #site .header-action{min-height:40px;padding:10px 14px;border-radius:3px;font-size:12px;line-height:1.3}
+.haven-polished #site .haven-solar-statement button,.haven-polished #site .pair-copy button,.haven-polished #site .group-card-copy button{width:fit-content;max-width:100%;min-height:44px;padding:11px 0;border-top:0;border-bottom:1px solid currentColor;gap:0;font-size:15px!important;line-height:1.4;justify-content:flex-start}
+.haven-polished #site .c-button>span:has(.arrow-diagonal),.haven-polished #site button>span:has(.arrow-diagonal){display:none}
+.haven-polished #site button:focus-visible,.haven-polished #site a:focus-visible{outline:2px solid currentColor;outline-offset:5px}
+@media(max-width:700px){.haven-polished #site .header-action{font-size:10px;min-height:36px;padding:9px 11px}.haven-polished #site .haven-copy .c-button{margin-top:16px;padding:12px 18px;font-size:13px;min-height:44px}.haven-polished #site .c-pro .c-button,.haven-polished #site .c-close .c-button{font-size:13px;padding:12px 18px;min-height:44px}}
+
+.haven-polished #site .commercial-enquiry{display:inline-flex;align-items:center;min-height:44px;margin:16px 0 0 20px;padding:10px 0;border:0;border-bottom:1px solid currentColor;background:transparent;color:inherit;font:500 14px/1.4 Manrope,sans-serif;cursor:pointer}.haven-polished #site .group-future span{line-height:1.65}.haven-polished #site .haven-band{display:block;text-align:left;word-spacing:1px}@media(max-width:700px){.haven-polished #site .commercial-enquiry{display:flex;width:fit-content;margin:12px 0 0;font-size:13px}.haven-polished #site .haven-band{font-size:12px;line-height:1.8}}
